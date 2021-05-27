@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style/style.css">
+
+</head>
+<body>
+    <div id="container">
+        <h1 class="primary-head">Groceries</h1>
+        <p class="primary-p">Never forget your dhaniya again</p>
+        <p class="primary-p">Make your grocery list with us</p>
+        <button class="btn">Create</button>
+    </div>
+
+    <script>
+        var btn = document.querySelector(".btn");
+        btn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            window.location= "/Grocery.html";
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+    background: url('../images/zachary-staines-0kvS01RVKQI-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+*{
+    --tick : 2.5rem;
+}
+
+#container-main{    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article{
+    min-height: 10rem;
+    width: 50rem;
+    padding: 3rem 3rem;
+    background-color: #cecccded;
+    box-shadow: 0rem 0rem 1rem black;
+    border-radius: 0.5rem;
+    transition: 0.5s all ease;
+}
+
+#container-input{
+    width: 44rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+#input{
+    height: 4rem;
+    width: 30rem;
+    font-size:2rem;
+    padding: 1rem;
+    border-radius: 1.8rem;
+    color: black;
+    border: 0.1rem solid black;
+}
+
+.delete{
+    font-size: 2.5rem;
+    opacity: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #808080a3;
+    transition: all 0.1s ease-in;
+}
+
+.dont-show{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    transition: all 0.1s ease-in;
+}
+.show{
+    height: 5rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #808080a3;
+    transition: all 0.2s ease-in;
+}
+#items li div{
+    background: url('../images/check.png') no-repeat center center/cover;
+    width: var(--tick);
+    height: var(--tick);
+    transition: all 0.1s ease-in;
+}
+#items li div:hover{
+    background: url('../images/checkhover.png') no-repeat center center/cover;
+}
+
+.add-btn{
+    height: 4rem;
+    width: 10rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    transition: all 0.1s ease;
+    border: 0.1rem solid black;
+}
+.add-btn:hover{
+    transform: scale(1.1);
+}

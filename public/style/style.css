@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap');
+
+
+/* font-family: 'Baloo 2', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* color: white; */
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.primary-head{
+    font-family: 'Baloo 2', cursive;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.primary-p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.secondry-p{
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+#container{
+    height: 100vh;
+    background: url('../images/basket-918416_1920.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#container h1{
+    /* border: 1px solid red; */
+    position: relative;
+    height: 8rem;
+    width: 30rem;
+    font-size: 6rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    text-shadow: 0.3rem 0.1rem 0.2rem black;
+    animation: riseup 0.3s ease-out 1;
+    margin-bottom: 1rem;
+}
+
+#container p{
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 0rem 0rem 2rem black;
+    animation: riseup2 0.8s linear 1;
+}
+.btn{
+    position: relative;
+    height: 4rem;
+    width: 10rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    background-color: #e0ff95;
+    border: none;
+    transition: all 0.1s ease;
+    animation: slide 1s linear 1;
+}
+.btn:hover{
+    background-color: #c4ff39;
+    transform: scale(1.1);
+}
+
+@media (max-width: 750px) {
+    *{
+        font-size: 55%;
+    }
+}
+@media (max-width: 650px) {
+    *{
+        font-size: 50%;
+    }
+}
+@media (max-width: 450px) {
+    *{
+        font-size: 35%;
+    }
+}
+
+@keyframes riseup {
+    from{
+        top: 2%;
+        opacity: 0;
+    }
+    to{
+        top: 0%;
+        opacity: 1;
+    }
+}
+@keyframes riseup2 {
+    0%{
+        opacity: 0;
+    }    
+    25%{
+        opacity: 0;
+        top: 5%;
+    }
+    100%{
+        opacity: 1;
+        top: 0%;
+    }
+}
+@keyframes slide {
+    0%{
+        opacity: 0;
+    }    
+    75%{
+        opacity: 0;
+        right: 1%;
+    }
+    100%{
+        opacity: 1;
+        right: 0%;
+    }
+}
