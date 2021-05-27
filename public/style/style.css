@@ -92,7 +92,12 @@ body{
 }
 @media (max-width: 450px) {
     *{
-        font-size: 35%;
+        font-size: 42%;
+    }
+}
+@media (max-width: 300px) {
+    *{
+        font-size: 32%;
     }
 }
 
